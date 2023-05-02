@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/main.css">
+    <title>ROCK PAPER SCISSORS GAME</title>
+</head>
+<body class="py-7 bg-cyan-600 px-4 text-justify align-baseline">
+ <div class="px-8 py-5"> 
+    <h1 class="py-3 px-4 bg-pink-800 text-white rounded-xl text-2xl font-extrabold text-center">ROCK-PAPER-SCISSORS GAME</h1>
+</div>
+    <br>
+    <br>
+    <div>
+      <p class="bg-blue-500 text-white font-semibold rounded-xl px-5 py-4 text-justify text-2xl">The rock is a closed fist; paper is a flat hand with fingers and thumb extended and the palm facing downward; and scissors is a fist with the index and middle fingers fully extended toward the opposing player. Rock wins against scissors; paper wins against rock; and scissors wins against paper.</p>
+    </div>
+    <br>
+    <br>
+
+    <div class="py-6 px-8 space-x-7 text-center">
+    <button onclick="
+        const randomNumber = Math.random();
+         
+        let computerMove ='';
+
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+            computerMove = 'Rock';
+        } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+            computerMove = 'Paper';
+        } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+            computerMove = 'Scissors';
+        }
+
+        console.log(computerMove);
+
+        let result = '';
+        if (computerMove === 'Rock') {
+            result = 'Tie';
+        } else if (computerMove === 'Paper') {
+            result = 'You lose';
+        } else if (computerMove === 'Scissors') {
+            result = 'You win';
+        } 
+
+        alert(`You picked rock, Computer picked ${computerMove}, ${result}`);
+
+        
+
+        " class="bg-blue-700 text-blue-100 py-1 px-4 rounded-xl text-4xl font-bold  ">ROCK ✊</button>
+
+        <button onclick="
+        const randomNumber = Math.random();
+         
+        let computerMove ='';
+
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+            computerMove = 'Rock';
+        } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+            computerMove = 'Paper';
+        } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+            computerMove = 'Scissors';
+        }
+
+        console.log(computerMove);
+
+        let result = '';
+        if (computerMove === 'Rock') {
+            result = 'You win';
+        } else if (computerMove === 'paper') {
+            result = 'Tie';
+        } else if (computerMove === 'Scissors') {
+            result = 'You lose';
+        } 
+
+        alert(`You picked Paper, Computer picked ${computerMove}, ${result}`);
+        
+        "class="bg-yellow-600 text-yellow-300 py-1 px-4 rounded-xl text-4xl font-bold">PAPER ✋</button>
+
+       
+
+
+    <button onclick="
+    const randomNumber = Math.random();
+     
+    let computerMove ='';
+
+    if (randomNumber >= 0 && randomNumber < 1 / 3) {
+        computerMove = 'Rock';
+    } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+        computerMove = 'Paper';
+    } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+        computerMove = 'Scissors';
+    }
+
+    console.log(computerMove);
+
+    let result = '';
+    if (computerMove === 'Rock') {
+        result = 'You lose';
+    } else if (computerMove === 'Paper') {
+        result = 'You win';
+    } else if (computerMove === 'Scissors') {
+        result = 'Tie';
+    } 
+
+    alert(`You picked scissors, Computer picked ${computerMove}, ${result}`);
+
+    "class="bg-purple-400 text-purple-900 py-1 px-4 rounded-xl text-4xl font-bold  ">SCISSORS ✂</button>
+</div>
+<br>
+<br>
+
+<h2 class="font-extrabold text-white text-3xl">Enjoy the game!!!! 😻  </h2>
+    <script>
+
+    </script>
+</body>
+</html>
